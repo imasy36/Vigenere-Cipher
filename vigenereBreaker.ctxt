@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.target=vigenereBreaker
+comment0.text=\r\n\ This\ class\ breaks\ the\ vigenere\ cipher\ .\r\n\ \r\n\ @author\ (\ imasy36\ )\ \r\n\ @version\ (\ 04\ -\ 04\ -\ 2020\ )\r\n
+comment1.params=text\ whichSlice\ totalSlices
+comment1.target=java.lang.String\ sliceString(java.lang.String,\ int,\ int)
+comment2.params=text\ keyLength\ commonLetter
+comment2.target=int[]\ tryKeyLength(java.lang.String,\ int,\ char)
+comment3.params=fname
+comment3.target=void\ breakVigenere(java.lang.String)
+comment4.params=key
+comment4.target=java.lang.String\ intToString(int[])
+comment5.params=
+comment5.target=java.util.HashMap\ getDictionaries()
+comment6.params=mySet\ text
+comment6.target=int\ countWords(java.util.HashSet,\ java.lang.String)
+comment7.params=mySet
+comment7.target=char\ mostCommonCharIn(java.util.HashSet)
+comment8.params=text\ dict
+comment8.target=java.lang.String\ breakForAllLangs(java.lang.String,\ java.util.HashMap)
+numComments=9
