@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=vigenereCipher
+comment0.text=\r\n\ This\ class\ implements\ vigenereCipher\ here.\r\n\ This\ class\ also\ make\ use\ of\ caesarCipher\ class.\r\n\ @author\ (\ imasy36\ )\ \r\n\ @version\ (\ 04/03/2020\ )\r\n
+comment1.params=k\ c
+comment1.target=vigenereCipher(java.lang.String,\ char)
+comment2.params=text
+comment2.target=java.lang.String\ encrypt(java.lang.String)
+comment3.params=text
+comment3.target=java.lang.String\ decrypt(java.lang.String)
+comment4.params=
+comment4.target=java.lang.String\ toString()
+numComments=5
