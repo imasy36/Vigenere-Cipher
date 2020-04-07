@@ -15,18 +15,41 @@ public class Main {
         vigenereBreaker vb=new vigenereBreaker();
         while(true)
         {
-            System.out.println("Available Files : ");
-            File f = new File(add);
-            for (File file:f.listFiles())
-                System.out.println(" -- " + file);
-            System.out.println("Enter file name to decrypt:");
+            System.out.println("Enter Choice : \n 1. Encrypt \n 2. Decrypt \n 3. Exit");
             Scanner in = new Scanner(System.in);
-            String fname=in.next();
-            vb.breakVigenere(fname);
-            System.out.println("\n---To exit type exit else continue");
-            String cho=in.next().toLowerCase();
-            if(cho.equals("exit"))
-                break;
+            int cho = in.nextInt();
+            switch(cho)
+            {
+                case 1:
+                    System.out.println("Available Files : ");
+                    File fe = new File(add);
+                    for (File file:fe.listFiles())
+                        System.out.println(" -- " + file);
+                    System.out.println("Enter file name :");
+                    String fnamee=in.next();
+                    System.out.println("Enter Key : ex - Flute");
+                    String key=in.next();
+                    System.out.println("Enter most common letter : ex - For English - 'e' ");
+                    char c=in.next().charAt(0);
+                    vigenereCipher vc=new vigenereCipher(key,c);
+                    caesarCipher cc=new caesarCipher();
+                    cc.textToFile(vc.encrypt(cc.textFromFile(fnamee)),"result.txt");
+                    break;
+                case 2:
+                    System.out.println("Available Files : ");
+                    File fd = new File(add);
+                    for (File file:fd.listFiles())
+                        System.out.println(" -- " + file);
+                    System.out.println("Enter file name :");
+                    String fnamed=in.next();
+                    vb.breakVigenere(fnamed);
+                    break;
+                case 3:
+                    System.exit(0);
+                default:
+                    System.out.println("Wrong Choice !!!!");
+                    continue;    
+            }
         }
     }
 }
